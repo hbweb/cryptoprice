@@ -1,10 +1,24 @@
-import Navbar from '../components/navbar';
+import Fetch from 'isomorphic-unfetch';
+import Layout from "../components/layout";
+import Prices from '../components/prices';
 
-const Index = () => (
+const Index = (props) => (
+    <Layout>
     <div>
-        <Navbar></Navbar>
-        <h1>Welcome to CryptoPrice</h1>
+        <h1>Bitcoin price today</h1>
+        <Prices bpi={props.bpi} />
     </div>
-)
+    </Layout>
+);
+
+Index.getInitialProps = async function() {
+    const res = await fetch('https://api.coindesk.com/v1/bpi/currentprice/GBP.json');
+    const data = await res.json();
+
+    return {
+        bpi: data.bpi
+    }
+}
 
 export default Index;
+
