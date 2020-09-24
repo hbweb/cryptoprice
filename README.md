@@ -1,5 +1,5 @@
 # cryptoprice
-Application with next.js and react
+Talk week - A simple application with Next.js and React for Viettel's employees
 
 ## Application Demo
 
