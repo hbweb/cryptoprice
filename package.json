@@ -1,0 +1,27 @@
+{
+  "name": "cryptoprice",
+  "version": "1.0.0",
+  "description": "Application with next.js",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hbweb/cryptoprice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hbweb/cryptoprice/issues"
+  },
+  "homepage": "https://github.com/hbweb/cryptoprice#readme",
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
